@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .nav{
+        width: 70%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        position: fixed;
+        z-index: 999;
+        img{
+            width: 200px;
+            height: 50px;
+        }
+        ul{
+            display: flex;
+            li{ 
+                list-style: none;
+                :hover{
+                    color: #ffc800;
+                }
+                a{
+                transition: all .4s;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                font-weight: 300;
+                padding: 0px 20px;
+
+                }
+            }
+        }
+
+    }
+    .text{
+        width: 70%;
+        text-align: center;
+        padding: 250px;
+        color: white;
+        p{
+            font-size: 2.25rem;
+            font-style: italic;
+            line-height: 2.25rem;
+            margin-bottom: 2rem;
+        }
+        h1{
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 4.5rem;
+            margin-bottom: 4rem;
+        }
+        button{
+            padding: 1.25rem 2.5rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            background-color: #ffc800;
+            color: white;
+            border-radius: 10px;
+            border: 0;
+            transition: all .5s;
+            &:hover{
+                background-color: #ffc800cb;
+            }
+        }
+
+    }
+}
